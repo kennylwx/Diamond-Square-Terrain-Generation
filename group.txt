@@ -1,0 +1,14 @@
+Group Details 
+
+Project Participants 
+Kenny Lee (801361) (username kennyl2)
+Xin Wei Ding (758966 ) (username xind1)
+
+Contribution 
+We both completed the Diamond-Square Heightmap Generation
+Kenny Lee 
+- Completed the Camera Motion 
+- Completed the Sun 
+Xin Wei Ding 
+- Completed the Water Generation
+- Completed the Water and Terrain Shaders
