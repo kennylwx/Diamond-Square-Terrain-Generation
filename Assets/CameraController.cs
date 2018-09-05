@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         this.transform.position = new Vector3(250.0f, 500.0f, 250.0f);
+        transform.LookAt(terrain.transform.position);
     }
 
     bool flag = false;
@@ -47,12 +48,16 @@ public class CameraController : MonoBehaviour
             flag = true;
 
         }
+
+
     }
 
     void FixedUpdate()
     {
+        
         yaw += spinSpeed * Input.GetAxis("Mouse X");
         pitch -= spinSpeed / 2.0f * Input.GetAxis("Mouse Y");
+        pitch = Mathf.Clamp(pitch, -90f, 90f);
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
 
         if (Input.GetKey(KeyCode.Q))

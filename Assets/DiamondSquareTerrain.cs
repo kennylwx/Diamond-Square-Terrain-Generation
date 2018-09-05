@@ -34,7 +34,6 @@ public class DiamondSquareTerrain : MonoBehaviour {
 
         //add mesh collider
         MeshCollider collider = this.gameObject.AddComponent<MeshCollider>();
-        //collider.gameObject = this.gameObject;
 
 
         Mesh mesh = GetComponent<MeshFilter>().mesh;
@@ -119,7 +118,6 @@ public class DiamondSquareTerrain : MonoBehaviour {
         }
 
         mesh.vertices = vertices;
-        //mesh.uv = uvs;
         mesh.triangles = triangles.ToArray();
 
         mesh.RecalculateBounds();
@@ -182,8 +180,7 @@ public class DiamondSquareTerrain : MonoBehaviour {
 
          */
         int halfGridSize = (int)(gridSize * 0.5f);
-        int topLeft = row * offset + col;
-        int botLeft = (row + gridSize) * offset + col;
+
 
         //index for four corners
         int c1 = row * offset + col;

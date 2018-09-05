@@ -60,11 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CameraController.cs" />
-    <Compile Include="Assets\DiamondSquare.cs" />
-    <Compile Include="Assets\DiamondSquare\DiamondSquare4.cs" />
     <Compile Include="Assets\DiamondSquareTerrain.cs" />
-    <None Include="Assets\Shader.shader" />
-    <None Include="Assets\MyShader.shader" />
+    <Compile Include="Assets\PointLight.cs" />
+    <Compile Include="Assets\Scripts\SunController.cs" />
+    <Compile Include="Assets\water.cs" />
+    <None Include="Assets\wave.shader" />
+    <None Include="Assets\TerrainShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/xinding/UnityProj1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
